@@ -6,9 +6,10 @@ import { Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
 
 @Component({
-  selector: "app-pokemon-details",
-  templateUrl: "./pokemon-details.component.html",
-  styleUrls: ["./pokemon-details.component.css"]
+    selector: "app-pokemon-details",
+    templateUrl: "./pokemon-details.component.html",
+    styleUrls: ["./pokemon-details.component.css"],
+    standalone: false
 })
 export class PokemonDetailsComponent implements OnInit, OnDestroy {
   id: number;
